@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Bright Smile Dental</title>
+<meta name="description" content="Book an appointment at either Bright Smile Dental branch, or reach our emergency hotline for urgent dental issues.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Bright Smile Dental</a>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Team</a>
+      <a href="locations.html">Locations</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="branch-switcher">
+        <select aria-label="Jump to a branch">
+          <option value="">Nearest branch…</option>
+          <option value="branch-1">Branch 1 — Central</option>
+          <option value="branch-2">Branch 2 — Riverside</option>
+        </select>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Book a Visit</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb">Contact</p>
+    <h1>Let's get you booked in</h1>
+    <p class="hero-sub">Fill in the form and we'll confirm your slot, or call/WhatsApp your preferred branch directly.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div>
+      <h2>Send an inquiry</h2>
+      <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-success').style.display='block'; this.reset();">
+        <div class="form-field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="form-field">
+          <label for="branch">Preferred branch</label>
+          <select id="branch" name="branch" required>
+            <option value="">Select a branch</option>
+            <option value="branch-1">Branch 1 — Central</option>
+            <option value="branch-2">Branch 2 — Riverside</option>
+            <option value="either">Either — whichever's soonest</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="date">Preferred date</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you need — checkup, toothache, aligners, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        <p id="form-success" style="display:none; color: var(--teal-dark); margin-top:14px; font-weight:600;">Thanks — we'll confirm your appointment shortly. (Demo form — connect to a booking backend before launch.)</p>
+      </form>
+    </div>
+
+    <div>
+      <div class="emergency-box">
+        <h3>Dental emergency?</h3>
+        <p style="color:white; opacity:0.95;">Toothaches, trauma, or a broken restoration can't wait. Call our emergency hotline — staffed every day, including Sundays.</p>
+        <a href="tel:+15550109999" style="font-family: var(--font-display); font-size:1.6rem; font-weight:600;">+1 (555) 010-9999</a>
+      </div>
+
+      <div style="margin-top: 28px;" class="grid-cards" >
+        <div class="card">
+          <h3>Branch 1 — Central</h3>
+          <p>12 Market Street · Mon–Sat, 9am–7pm</p>
+          <div class="phone-row">
+            <a href="tel:+15550102201" class="btn btn-outline">Call</a>
+            <a href="https://wa.me/15550102201" class="btn btn-ghost">WhatsApp</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Branch 2 — Riverside</h3>
+          <p>48 Riverside Avenue · Mon–Sat, 9am–7pm</p>
+          <div class="phone-row">
+            <a href="tel:+15550102202" class="btn btn-outline">Call</a>
+            <a href="https://wa.me/15550102202" class="btn btn-ghost">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Bright Smile Dental</h3>
+      <p style="opacity:0.85;">Two neighborhood clinics, one standard of gentle, modern dental care.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Our Dentists</a></li>
+        <li><a href="locations.html">Locations</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Branch 1 — Central</h3>
+      <ul>
+        <li>12 Market Street</li>
+        <li><a href="tel:+15550102201">+1 (555) 010-2201</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Branch 2 — Riverside</h3>
+      <ul>
+        <li>48 Riverside Avenue</li>
+        <li><a href="tel:+15550102202">+1 (555) 010-2202</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Bright Smile Dental. All placeholder details — replace before launch.</span>
+    <span>Emergency Hotline: <a href="tel:+15550109999">+1 (555) 010-9999</a></span>
+  </div>
+</footer>
+
+<a href="https://wa.me/15550102201" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.2-.46-4.52-1.26l-.32-.19-3.01.81.81-2.94-.21-.32A7.94 7.94 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.4-5.9c-.24-.12-1.43-.71-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.19-.47-.39-.4-.54-.41-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
